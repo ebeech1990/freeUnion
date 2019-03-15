@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="./styles.css">
+   </head>
+   <!-- Body Starts Here -->
+   <body>
+      <div class="app-form">
+         <form action="https://formspree.io/emilyknapp1990@yahoo.com" method="POST">
+            <fieldset>
+               <legend><span class="number">1</span> Student</legend>
+               <!--student name info-->
+               <div class="uniform">
+                  <div class="form-row">
+                     <div class="col-3">
+                        <input type="text" name="studentNameFirst" placeholder="First Name">
+                     </div>
+                     <div class="col-2">
+                        <input type="text" name="studentNameNickname" placeholder="(Nickname)">
+                     </div>
+                     <div class="col-3">
+                        <input type="text" name="studentNameMiddle" placeholder="Middle Name">
+                     </div>
+                     <div class="col-3">
+                        <input type="text" name="studentNameLast" placeholder="Last Name">
+                     </div>
+                  </div>
+               </div>
+               <!--Address-->
+               <div class="uniform">
+                  <p>address</p>
+                  <div class="form-row">
+                     <div class="col-4">
+                        <input type="text" name="studentAddressStreet" placeholder="Street">
+                     </div>
+                     <div class="col-3">
+                        <input type="text" name="studentAddressCity" placeholder="City">
+                     </div>
+                     <div class="col-1">
+                        <input type="text" name="studentAddressState" placeholder="State">
+                     </div>
+                     <div class="col-2">
+                        <input type="text" name="studentAddressZip" placeholder="Zipcode">
+                     </div>
+                  </div>
+               </div>
+               <!---->  
+               <!--dob/grade apply/school year-->
+               <div class="uniform">
+                  <div class="form-row">
+                     <div class="col-3">
+                        <label for="studentDob">Date of Birth:</label>
+                        <input type="text" name="studentDob" placeholder="mm/dd/yyyy">
+                     </div>
+                     <div class="col-3">
+                        <label for="appliedGrade">Grade applied for:</label>
+                        <input type="text" name="appliedGrade" placeholder=""> <!--use drop down-->
+                     </div>
+                     <div class="col-3">
+                        <label for="schoolYear">for school year:</label>
+                        <input type="text" name="schoolYear" placeholder="year">
+                     </div>
+                  </div>
+               </div>
+               <!--school type-->
+               <div class="uniform">
+                  <div class="form-row">
+                     <div class="form-group col-md-4">
+                        <label for="preschoolDays">If applying for preschool, please select the number of days desired:</label>
+                        <select name = "preschoolDays" id="preschool-days" class="form-control">
+                           <option selected>Choose...</option>
+                           <option>2</option>
+                           <option>3</option>
+                           <option>5</option>
+                        </select>
+                     </div>
+                     <div class="form-group col-md-4">
+                        <label for="prekindergardenDays">If applying for prekindergarden, please select the number of days desired:</label>
+                        <select name="prekindergardenDays" id="prekindergarden-days" class="form-control">
+                           <option selected>Choose...</option>
+                           <option>4</option>
+                           <option>5</option>
+                        </select>
+                     </div>
+                  </div>
+               </div>
+               <!--current/prev school-->
+               <div class="uniform">
+                  <div class="form-row">
+                     <div class="col-4">
+                        <label for="currentSchool">Current School:</label>
+                        <input type="text" name="currentSchool" placeholder="">
+                     </div>
+                     <div class="col-2">
+                        <label for="currentGrade">Grade:</label>
+                        <input type="text" name="currentGrade" placeholder="">
+                     </div>
+                     <div class="col-3">
+                        <label for="currentContact">Contact Person:</label>
+                        <input type="text" name="currentContact" placeholder="">
+                     </div>
+                  </div>
+                  <div class="form-row">
+                     <div class="col-4">
+                        <label for="previousSchool">Previous School:</label>
+                        <input type="text" name="previousSchool" placeholder="">
+                     </div>
+                     <div class="col-2">
+                        <label for="previousGrade">Grade:</label>
+                        <input type="text" name="previousGrade" placeholder="">
+                     </div>
+                     <div class="col-3">
+                        <label for="previousContact">Contact Person:</label>
+                        <input type="text" name="previousContact" placeholder="">
+                     </div>
+                  </div>
+               </div>
+            </fieldset>
+            <fieldset>
+               <!--parent/guardian-->
+               <legend><span class="number">2</span> Parent/Guardian/Family</legend>
+               <div class="uniform">
+                  <div class="row">
+                     <div class="col">
+                        <label for="pg1Name">Name</label> 
+                        <div>
+                        <input type="text" name="pg1Name" placeholder="">
+
+                        
+                        
+                        <button type="button" class="btn btn-outline-danger" id="pgAddressAdd1">add</button>
+                        </div>
+                        <div id="appendPgAddress1"></div> 
+                     
+                        <label for="pg1PhonePrimary">Primary Phone:</label>
+                        <input type="text" name="pg1PhonePrimary" placeholder="">
+                        <label for="pg1PhoneAdd">Additional Phone(s):</label>
+                        <input type="text" name="pg1PhoneAdd" placeholder="">
+                        <label for="pg1Email">Email:</label>
+                        <input type="email" name="pg1Email" placeholder="">
+                        <label for="pg1Employer">Employer:</label>
+                        <input type="text" name="pg1Employer" placeholder="">
+                        <label for="pg1Job">Job Title:</label>
+                        <input type="text" name="pg1Job" placeholder="">
+                     </div>
+                     <div class="col">
+                        <label for="pg2Name">Name</label>   
+                        <input type="text" name="pg2Name" placeholder="">
+                        
+                        <div id="appendPgAddress2"></div> 
+                        <button type="button" class="btn btn-outline-danger" id="pgAddressAdd2">add</button>
+                        
+                        <label for="pgPhonePrimary">Primary Phone:</label>
+                        <input type="text" name="pg2PhonePrimary" placeholder="">
+                        <label for="pg2PhoneAdd">Additional Phone(s):</label>
+                        <input type="text" name="pg2PhoneAdd" placeholder="">
+                        <label for="pg2Email">Email:</label>
+                        <input type="email" name="pg2Email" placeholder="">
+                        <label for="pg2Employer">Employer:</label>
+                        <input type="text" name="pg2Employer" placeholder="">
+                        <label for="pg2Job">Job Title:</label>
+                        <input type="text" name="pg2Job" placeholder="">
+                     </div>
+                  </div>
+               </div>
+            
+            <!---->
+            <div class="uniform">
+               <div class="form-row">
+                  <div class="col">
+                     <label for="divorced">If parents are divorced or separated, who has custody?</label>				
+                  </div>
+                  <div class="col">
+                     <input type="text" name="divorced" placeholder="">
+                  </div>
+               </div>
+               <div class="form-row">
+                  <div class="col">
+                     <label for="stepparents">Stepparents:</label>			
+                  </div>
+                  <div class="col">
+                     <input type="text" name="stepparents" placeholder="">
+                  </div>
+               </div>
+            </div>
+            
+            <div class="uniform">
+               <p>Applicant's siblings:</p>
+               <div id="sib">
+                  <div class="form-row">
+                     <div class="col">
+                        <input type="text" name="sibName" placeholder="Name">	
+                     </div>
+                     <div class="col">
+                        <input type="text" name="sibDob" placeholder="Date of Birth">
+                     </div>
+                     <div class="col">
+                        <input type="text" name="sibSchool" placeholder="School Attending">
+                     </div>
+                  </div>
+               
+            
+      
+   <div id="appendSib"></div>   
+<button type="button" class="btn btn-outline-danger" id="add-sib">add</button> 
+
+
+<p>Applicant's grandparents:</p>
+<div id="gp">
+<div class="form-row">
+   <div class="col-3">
+      <input type="text" name="gpName" placeholder="Name">
+   </div>
+   <div class="form-row">
+      <div class="col-4">
+         <input type="text" name="gpAddressStreet" placeholder="Street">
+      </div>
+      <div class="col-3">
+         <input type="text" name="gpAddressCity" placeholder="City">
+      </div>
+      <div class="col-1">
+         <input type="text" name="gpAddressState" placeholder="State">
+      </div>
+      <div class="col-2">
+         <input type="text" name="gpAddressZip" placeholder="Zipcode">
+      </div>
+   </div>
+</div>
+
+<div id="appendGp"></div>
+<button id="add-gp" class="btn btn-outline-danger" type="button">add</button> 
+
+</div>
+</fieldset>
+<fieldset>
+   <legend><span class="number">3</span> tbd</legend>
+   <div class="uniform">
+      <label for="q1">How did you learn about the Free Union Country School?</label>
+      <textarea class="questions" id="q1" rows="3"></textarea>
+      <label for="q2">What are you looking for in a school for your child?</label>
+      <textarea class="questions" id="q2" rows="3"></textarea>
+      <label for="q3">Please describe your child's strengths and challenges:</label>
+      <textarea class="questions" id="q3" rows="3"></textarea>
+      <label for="q4">What are your child's special interests?</label>
+      <textarea class="questions" id="q4" rows="3"></textarea>
+      <label for="q5">If your child has ever been accelerated or held back in school, please dexcribe the circumstances.</label>
+      <textarea class="questions" id="q5" rows="3"></textarea>
+      <label for="q6">Does your child have any educational, physical, or emotional needs that we should know about?</label>
+      <textarea class="questions" id="q6" rows="3"></textarea>
+      <label for="q7">Please note any previous academic or psychological testing:</label>
+      <textarea class="questions" id="q7" rows="3"></textarea>
+      <div>
+         <label for="q8">Person or persons responsible for all fees:</label>
+         <input type="text" name="fees" id="q8" placeholder="">
+
+         <div id="appendFeeAddress"></div>
+         <button type="button" class="btn btn-outline-danger" id="addFeeAddress">Add Address (if not parent)</button>
+         
+            
+         
+      </div>
+   </div>
+</fieldset>
+<fieldset>
+   <legend><span class="number">4</span> Sign/Submit</legend>
+   <div class="uniform">
+      <p>Parent/Guardian Signatures</p>
+   </div>
+   <div class="uniform">
+      <div class="form-row">
+         <div class="col-3">
+            <label for="sig1">Parent</label>
+            <input type="text" name="sig1" placeholder="">
+         </div>
+         <div class="col-3">
+            <label for="sig1Date">Date</label>
+            <input type="text" name="sig1Date" placeholder="">
+         </div>
+      </div>
+   </div>
+   <div class="uniform">
+      <div class="form-row">
+         <div class="col-3">
+            <label for="sig2">Parent</label>
+            <input type="text" name="sig2" placeholder="">
+         </div>
+         <div class="col-3">
+            <label for="sig2Date">Date</label>
+            <input type="text" name="sig2Date" placeholder="">
+         </div>
+      </div>
+      <input type="submit" value="Apply" />
+</fieldset>
+</form>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+<script src="./input.js"></script>
+</body>
+<!-- Body Ends Here -->
+</html>
